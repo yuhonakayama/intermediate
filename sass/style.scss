@@ -737,6 +737,7 @@
     width: 28px;
     height: 28px;
     right: 15px;
+    bottom: 75px;
   }
 }
 
@@ -960,6 +961,7 @@ dl.form__dl--kinds {
 
 .form__input {
   @include mq("md") {
+    width: 100%;
     margin-top: 4px;
   }
 }
@@ -975,7 +977,8 @@ dl.form__dl--kinds {
   letter-spacing: 0.02em;
 
   @include mq("md") {
-    width: 305px;
+    width: 100%;
+    max-width: 305px;
   }
 }
 
@@ -1059,19 +1062,18 @@ dl.form__dl--text-content {
   resize: none;
 
   @include mq("md") {
+    width: 100%;
+    max-width: 305px;
     margin-top: -2px;
-  }
-
-  @include mq("md") {
-    width: 305px;
   }
 }
 
 .form__input.form__input--btn {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
 
   @include mq("md") {
-    width: 305px;
+    max-width: 305px;
   }
 }
 
@@ -1084,6 +1086,7 @@ dl.form__dl--text-content {
   font-size: 15px;
   font-weight: $regular;
 }
+
 
 // -------------
 // サンクスページ
