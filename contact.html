@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>ExciteCode | お問い合わせ</title>
+  <meta name="description" content="ExciteCodeのお問い合わせページです。" />
+  <meta name="keywords" content="ExciteCode,ドラッグストア,ドッグケア,お問い合わせ" />
+  <!-- ogp -->
+  <meta property="og:title" content="お問い合わせ | ExciteCode" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yuhonakayama.com/contact.html" />
+  <meta property="og:image" content="https://yuhonakayama.com/images/ogp.jpg" />
+  <meta property="og:site_name" content="お問い合わせ | ExciteCode" />
+  <meta property="og:description" content="ExciteCodeのお問い合わせページです。" />
+  <meta name="twitter:card" content="summary" />
+  <!-- ファビコン -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header js-header">
+
+    <div class="header__inner">
+      <h1 class="header__name"><img src="/images/logo.png" alt="ヘッダーロゴ" class="header-logo"></h1>
+      <nav class="header__nav md-none">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="/index.html#concept" class="header__link">Concept</a>
+          </li>
+          <li class="header__item">
+            <a href="/index.html#service" class="header__link">Service</a>
+          </li>
+          <li class="header__item">
+            <a href="/index.html#access" class="header__link">Access</a>
+          </li>
+          <li class="header__item">
+            <a href="/index.html#contact" class="header__link header__link--contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+       <!-- ハンバーガーメニュー -->
+        <div class="hamburger js-hamburger md-show">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- ドロワーメニュー -->
+          <div class="drawer-menu js-drawer md-show">
+            <div class="drawer-menu__inner">
+              <ul class="drawer-menu__items">
+                <li class="drawer-menu__item">
+                  <a href="/index.html#concept" class="drawer-menu__link">Concept</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="/index.html#service" class="drawer-menu__link">Service</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="/index.html#access" class="drawer-menu__link">Access</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <div class="drawer-menu__contact contact-btn--drawer">
+                    <a href="/index.html#contact" class="drawer-menu__link contact-btn--drawer__link">Contact</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+    </header>
+
+  <main>
+    <!-- コンタクトページメインビュー -->
+     <section class="contact-mv js-main-view">
+      <div class="contact-mv__inner">
+        <div class="contact-mv__title section-title">
+          <h2 class="contact-mv__title-main title-main">Contact</h2>
+          <p class="contact-mv__title-sub title-sub--other">お問い合わせ</p>
+        </div>
+      </div>
+     </section>
+
+    <!-- コンタクトフォーム -->
+     <section class="contact-form">
+      <div class="contact-form__inner">
+        <div class="contact-form__message">
+          <p class="contact-form__message-text">
+            当店へのお問い合わせは下記フォームより受け付けております。<br>
+            担当者が確認後、折り返しご連絡させていただきます。
+          </p>
+        </div>
+        <div class="contact-form__container">
+          <form action="mail.php" method="POST" class="contact-form__form form">
+            <ul class="form__list">
+              <li class="form__item">
+                <dl>
+                  <dt class="form__label">
+                    <p class="form__label-text">お名前<span>*</span></p>
+                  </dt>
+                  <dd class="form__input">
+                    <input class="form__input-text" name="お名前" type="text" placeholder="愛犬　はなこ" required>
+                  </dd>
+                </dl>
+              </li>
+              <li class="form__item">
+                <dl>
+                  <dt class="form__label">
+                    <p class="form__label-text">メールアドレス<span>*</span></p>
+                  </dt>
+                  <dd class="form__input">
+                    <input type="email" name="メールアドレス" class="form__input-text" placeholder="excitecode@dogstore.co.jp" required>
+                  </dd>
+                </dl>
+              </li>
+              <li class="form__item">
+                <dl class="form__dl--kinds">
+                  <dt class="form__label">
+                    <p class="form__label-text">お問い合わせの種類<span>*</span></p>
+                  </dt>
+                  <dd class="form__input form__input--radio">
+                    <label>
+                      <input type="radio" name="問い合わせの種類" class="form__input-radio" value="ドッグフード" required>
+                      <span class="custom-radio"></span>ドッグフード
+                    </label>
+                    <label>
+                      <input type="radio" name="問い合わせの種類" class="form__input-radio" value="ドッグケア">
+                      <span class="custom-radio"></span>ドッグケア
+                    </label>
+                    <br class="md-show">
+                    <label>
+                      <input type="radio" name="問い合わせの種類" class="form__input-radio" value="ドッグトイ">
+                      <span class="custom-radio"></span>ドッグトイ
+                    </label>
+                    <label>
+                      <input type="radio" name="問い合わせの種類" class="form__input-radio" value="その他">
+                      <span class="custom-radio"></span>その他
+                    </label>
+                  </dd>
+                </dl>
+              </li>
+              <li class="form__item">
+                <dl class="form__dl--text-content">
+                  <dt class="form__label form__label--text-content">
+                    <p class="form__label-text">お問い合わせ内容<span>*</span></p>
+                  </dt>
+                  <dd class="form__input">
+                    <textarea name="問い合わせ内容" class="form__textarea" placeholder="入力してください"></textarea>
+                  </dd>
+                </dl>
+              </li>
+              <li class="form__item">
+                <dl>
+                  <dt class="form__label">
+                  </dt>
+                  <dd class="form__input form__input--btn">
+                    <div class="form__button">
+                      <input class="button" type="submit" value="送信">
+                    </div>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+     </section>
+
+  </main>
+  <!-- フッター -->
+  <footer class="footer">
+    <small class="copy-right">&copy;ExciteCode&nbsp;all&nbsp;rights&nbsp;reserved</small>
+  </footer>
+
+</body>
+
+</html>
